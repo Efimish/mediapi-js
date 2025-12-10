@@ -1,0 +1,28 @@
+{
+  "name": "mediapi-js",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Efim",
+  "description": "CLI that fetches free APIs for media",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "tsdown",
+    "prepare": "tsdown"
+  },
+  "dependencies": {
+    "@stricli/core": "^1.2.4",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.2",
+    "tsdown": "^0.17.2",
+    "typescript": "^5.9.3"
+  },
+  "bin": {
+    "mediapi-js": "dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ]
+}
